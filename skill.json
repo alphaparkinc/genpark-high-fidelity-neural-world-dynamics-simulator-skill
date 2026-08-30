@@ -1,0 +1,38 @@
+{
+  "name": "genpark-high-fidelity-neural-world-dynamics-simulator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - High-fidelity neural world dynamics simulator generating temporally coherent physical collision and fluid motion sequences.",
+  "author": "genpark",
+  "category": "world-model",
+  "tags": [
+    "world-simulator",
+    "neural-physics",
+    "sora-kling-dynamics",
+    "fluid-simulation",
+    "physical-continuity"
+  ],
+  "inputs": {
+    "world_prompt": {
+      "type": "string"
+    },
+    "duration_frames_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "simulation_job_id": {
+      "type": "string"
+    },
+    "physics_fidelity_score_pct": {
+      "type": "number"
+    },
+    "rendered_resolution": {
+      "type": "string"
+    },
+    "simulation_mp4_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
